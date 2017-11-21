@@ -1,0 +1,34 @@
+{
+  "name": "serial-socket-service",
+  "version": "0.0.1",
+  "description": "A socket to communicate to the serial arduino interface",
+  "main": "serial-socket-service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PHPiPiNO/node-serial-socket.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "arduino",
+    "arduino",
+    "nano",
+    "serial",
+    "raspberry",
+    "thermostat"
+  ],
+  "author": "Luca Saba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PHPiPiNO/node-serial-socket/issues"
+  },
+  "homepage": "https://github.com/PHPiPiNO/node-serial-socket#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "serialport": "latest",
+    "socket.io": "^2.0.4"
+  }
+}
