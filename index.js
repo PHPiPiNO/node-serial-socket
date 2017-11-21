@@ -26,12 +26,12 @@ const sleep = require('sleep');
 var serialOut = 'System ready!';
 var commandType = '';
 
-process.stdin.resume();
-process.stdin.setRawMode(true);
+//process.stdin.resume();
+//process.stdin.setRawMode(true);
 
 parser.on('data', function(data) {
     serialOut = data.trim();
-    //console.log(Date.now()+"Arrivati i seguenti dati alla seriale: "+data);
+
     if(globalResponse !== false) {
         switch (commandType) {
             case 'i':
@@ -54,7 +54,6 @@ port.on('error', function(err) {
 });
 
 app.get('/exec/:command', function(req, res){
-    //console.log('Esecuzione comando :'+ req.params.command);
     var quit = false;
     res.header('Content-Type', 'application/json');
 
